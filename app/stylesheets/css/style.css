@@ -158,4 +158,8 @@ svg {
   fill: currentColor;
 }
 
+.hidden {
+  display: none;
+}
+
 /*# sourceMappingURL=style.css.map */
