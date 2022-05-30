@@ -1,0 +1,28 @@
+@use "../01-abstracts/" as *;
+
+.hero {
+  margin-bottom: 120px;
+
+  &__wrapper {
+    max-width: 343px;
+    margin: 32px 16px;
+    display: flex;
+    flex-flow: column nowrap;
+    gap: 32px;
+    @include breakpoint($sm) {
+      margin: 32px auto;
+    }
+  }
+
+  &__h {
+    text-transform: uppercase;
+    font-size: rem(60px);
+    line-height: 0.92;
+  }
+
+  &__p {
+    color: $grey;
+    font-size: rem(18px);
+    line-height: 1.56;
+  }
+}

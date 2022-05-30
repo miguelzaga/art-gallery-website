@@ -161,6 +161,7 @@ svg {
 body {
   font-family: "Outfit", sans-serif;
   font-weight: 300;
+  color: #151515;
 }
 
 h1,
@@ -183,9 +184,8 @@ h4 {
   color: #fff;
   border-radius: 0;
   border: 0;
-  width: 204px;
+  width: clamp(0%, 100% - 56px, 204px);
   height: 72px;
-  padding: 24px 0;
   cursor: pointer;
   margin-right: 56px;
 }
@@ -221,9 +221,8 @@ h4 {
   color: #fff;
   border-radius: 0;
   border: 0;
-  width: 204px;
+  width: clamp(0%, 100% - 56px, 204px);
   height: 72px;
-  padding: 24px 0;
   cursor: pointer;
   margin-left: 56px;
 }
@@ -247,8 +246,39 @@ h4 {
   background-color: #151515;
 }
 
+.hero {
+  margin-bottom: 120px;
+}
+.hero__wrapper {
+  max-width: 343px;
+  margin: 32px 16px;
+  display: flex;
+  flex-flow: column nowrap;
+  gap: 32px;
+}
+@media (min-width: 375px) {
+  .hero__wrapper {
+    margin: 32px auto;
+  }
+}
+.hero__h {
+  text-transform: uppercase;
+  font-size: 3.75rem;
+  line-height: 0.92;
+}
+.hero__p {
+  color: #444;
+  font-size: 1.125rem;
+  line-height: 1.56;
+}
+
 .hidden {
   display: none;
+}
+
+.after-br::after {
+  content: "\a";
+  white-space: pre;
 }
 
 /*# sourceMappingURL=style.css.map */

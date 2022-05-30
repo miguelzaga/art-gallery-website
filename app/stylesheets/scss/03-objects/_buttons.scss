@@ -12,9 +12,8 @@
   color: $white;
   border-radius: 0;
   border: 0;
-  width: 204px;
+  width: clamp(0%, calc(100% - 56px), 204px);
   height: 72px;
-  padding: 24px 0;
   cursor: pointer;
 }
 
