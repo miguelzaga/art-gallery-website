@@ -1,2 +1,14 @@
 @use "./../01-abstracts/" as *;
 
+body {
+  font-family: $font-b;
+  font-weight: 300;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: $font-h;
+  font-weight: 900;
+}

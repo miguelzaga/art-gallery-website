@@ -134,7 +134,7 @@ table {
 }
 
 body {
-  font-family: "Outfit", sans-serif;
+  background-color: #fff;
 }
 
 html {
@@ -156,6 +156,95 @@ img {
 
 svg {
   fill: currentColor;
+}
+
+body {
+  font-family: "Outfit", sans-serif;
+  font-weight: 300;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: "Big Shoulders Display", cursive;
+  font-weight: 900;
+}
+
+.btn-1 {
+  position: relative;
+  font-family: "Big Shoulders Display", cursive;
+  font-weight: 800;
+  font-size: 1.25rem;
+  line-height: 1.2;
+  letter-spacing: 0.225rem;
+  text-transform: uppercase;
+  background-color: #151515;
+  color: #fff;
+  border-radius: 0;
+  border: 0;
+  width: 204px;
+  height: 72px;
+  padding: 24px 0;
+  cursor: pointer;
+  margin-right: 56px;
+}
+.btn-1::after {
+  position: absolute;
+  top: 0;
+  color: white;
+  background-color: #d5966c;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 56px;
+  right: -56px;
+  content: url("data:image/svg+xml,%3Csvg width='10' height='24' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='%23FFF' fill='none' d='m1 0 8 12-8 12'/%3E%3C/svg%3E");
+}
+.btn-1:hover {
+  background-color: #d5966c;
+}
+.btn-1:hover::after {
+  background-color: #151515;
+}
+
+.btn-2 {
+  position: relative;
+  font-family: "Big Shoulders Display", cursive;
+  font-weight: 800;
+  font-size: 1.25rem;
+  line-height: 1.2;
+  letter-spacing: 0.225rem;
+  text-transform: uppercase;
+  background-color: #151515;
+  color: #fff;
+  border-radius: 0;
+  border: 0;
+  width: 204px;
+  height: 72px;
+  padding: 24px 0;
+  cursor: pointer;
+  margin-left: 56px;
+}
+.btn-2::after {
+  position: absolute;
+  top: 0;
+  color: white;
+  background-color: #d5966c;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 56px;
+  left: -56px;
+  content: url("data:image/svg+xml,%3Csvg width='10' height='24' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='%23FFF' fill='none' d='M9 24 1 12 9 0'/%3E%3C/svg%3E");
+}
+.btn-2:hover {
+  background-color: #d5966c;
+}
+.btn-2:hover::after {
+  background-color: #151515;
 }
 
 .hidden {
