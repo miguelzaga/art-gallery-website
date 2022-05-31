@@ -4,14 +4,10 @@
   margin-bottom: 120px;
 
   &__wrapper {
-    max-width: 343px;
     margin: 32px 16px;
     display: flex;
     flex-flow: column nowrap;
     gap: 32px;
-    @include breakpoint($sm) {
-      margin: 32px auto;
-    }
   }
 
   &__h {

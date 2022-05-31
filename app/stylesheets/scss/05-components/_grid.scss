@@ -1,0 +1,58 @@
+@use "../01-abstracts/" as *;
+
+@mixin h2 {
+    font-size: rem(50px);
+    line-height: 0.9;
+    text-transform: uppercase;
+    margin-bottom: 21px;
+}
+
+@mixin p {
+    font-size: rem(18px);
+    line-height: 1.56;
+}
+
+.grid {
+  margin: 120px 16px;
+
+  &__1 {
+    margin-bottom: 32px;
+
+    &-img1 {
+      margin-bottom: 25px;
+    }
+
+    &-h {
+        @include h2;
+    }
+
+    &-p {
+      color: $grey;
+      @include p;
+    }
+  }
+
+  &__2 {
+    &-img2 {
+      margin-bottom: 16px;
+    }
+
+    &-img3 {
+      margin-bottom: 16px;
+    }
+
+    &-wrapper {
+      background-color: $black;
+      color: $white;
+      padding: 48px 24px 47px;
+    }
+
+    &-h {
+        @include h2;
+    }
+
+    &-p {
+        @include p;
+    }
+  }
+}
