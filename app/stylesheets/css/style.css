@@ -246,6 +246,30 @@ h4 {
   background-color: #151515;
 }
 
+.footer {
+  background-color: #151515;
+  color: white;
+  padding: 48px 32px;
+  display: flex;
+  flex-flow: column nowrap;
+}
+.footer__logo {
+  width: 110px;
+  margin-bottom: 38px;
+}
+.footer__p {
+  font-size: 1rem;
+  line-height: 1.62;
+  margin-bottom: 38px;
+}
+.footer__socials {
+  display: flex;
+  gap: 20px;
+}
+.footer__socials-img {
+  width: 20px;
+}
+
 .hero {
   margin-bottom: 120px;
 }

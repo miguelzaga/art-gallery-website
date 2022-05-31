@@ -1,0 +1,29 @@
+@use './../01-abstracts/' as *;
+
+.footer {
+    background-color: $black;
+    color: white;
+    padding: 48px 32px;
+    display: flex;
+    flex-flow: column nowrap;
+
+    &__logo {
+        width: 110px;
+        margin-bottom: 38px;
+    }
+
+    &__p {
+        font-size: rem(16px);
+        line-height: 1.62;
+        margin-bottom: 38px;
+    }
+
+    &__socials{
+        display: flex;
+        gap: 20px;
+
+        &-img {
+            width: 20px;
+        }
+    }
+}
