@@ -3,17 +3,62 @@
 .hero {
   margin-bottom: 120px;
   position: relative;
-  @include breakpoint($md){
-    height:700px;
+  @include breakpoint($md) {
+    height: 700px;
+  }
+  @include breakpoint($md-lg) {
+    height: 800px;
+  }
+  @include breakpoint($lg) {
+    max-width: 1110px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  &__img-offset {
+    @include breakpoint(calc($md-lg + 20px)) {
+      position: absolute;
+      right: 825px;
+      height: 800px;
+      width: 40vw;
+      background-color: $black;
+      z-index: -2;
+    }
+    @include breakpoint($lg) {
+      z-index: 1;
+      color: $white;
+      overflow: clip;
+      
+      &::after {
+        content: "Modern \a Art Gallery";
+        white-space: pre;
+        font-family: $font-h;
+        font-size: rem(96px);
+        text-transform: uppercase;
+        line-height: 0.92;
+        position: absolute;
+        top: 190px;
+        right: -163px;
+      }
+    }
   }
 
   &__img {
-    @include breakpoint($md){
+    @include breakpoint($md) {
       max-width: 437px;
       position: absolute;
       top: 0;
       left: 0;
-      z-index: 0;
+      z-index: -1;
+    }
+    @include breakpoint($md-lg) {
+      max-width: 540px;
+      left: auto;
+      right: 460px;
+    }
+    @include breakpoint($lg) {
+      left: 285px;
+      right: auto;
     }
   }
 
@@ -22,13 +67,20 @@
     display: flex;
     flex-flow: column nowrap;
     gap: 32px;
-    @include breakpoint($md){
+    @include breakpoint($md) {
+      position: relative;
       margin: 0 0 0 auto;
       max-width: 339px;
-      position: relative;
       right: 40px;
       top: 145px;
       z-index: 1;
+      gap: 48px;
+    }
+    @include breakpoint($lg) {
+      position: static;
+      padding-top: 190px;
+      max-width: 350px;
+      gap: 64px;
     }
   }
 
@@ -36,9 +88,16 @@
     text-transform: uppercase;
     font-size: rem(60px);
     line-height: 0.92;
-    @include breakpoint($md){
+    @include breakpoint($md) {
       font-size: rem(70px);
       line-height: 0.93;
+    }
+    @include breakpoint($lg) {
+      font-size: rem(96px);
+      line-height: 0.92;
+      position: absolute;
+      top: 190px;
+      left: 0;
     }
   }
 
@@ -46,5 +105,9 @@
     color: $grey;
     font-size: rem(18px);
     line-height: 1.56;
+    @include breakpoint($lg) {
+      font-size: rem(22px);
+      line-height: 1.45;
+    }
   }
 }

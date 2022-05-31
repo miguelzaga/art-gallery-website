@@ -25,7 +25,15 @@
   <body>
     <main class="main">
       <section class="hero">
-        <picture>
+        <div class="hero__img-offset"></div>
+        <picture class="hero__img">
+          <source
+          srcset="
+            ./app/assets/desktop/image-hero@2x.jpg 2x,
+            ./app/assets/desktop/image-hero.jpg
+          "
+          media="(min-width: 960px)"
+        />
           <source
             srcset="
               ./app/assets/tablet/image-hero@2x.jpg 2x,
@@ -34,7 +42,6 @@
             media="(min-width: 640px)"
           />
           <img
-            class="hero__img"
             src="./app/assets/mobile/image-hero.jpg"
             alt="Two people watching a painting"
             srcset="./app/assets/mobile/image-hero@2x.jpg 2x"

@@ -1,39 +1,40 @@
-@use './../01-abstracts/' as *;
+@use "./../01-abstracts/" as *;
 
 .footer {
-    background-color: $black;
-    color: white;
-    padding: 48px 32px;
+  background-color: $black;
+  color: white;
+  padding: 48px 32px;
+  display: flex;
+  flex-flow: column nowrap;
+  @include breakpoint($md) {
+    padding: 56px 40px 56px 39px;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+
+  &__logo {
+    width: 110px;
+    margin-bottom: 38px;
+  }
+
+  &__p {
+    font-size: rem(16px);
+    line-height: 1.62;
+    margin-bottom: 38px;
+    @include breakpoint($md) {
+      width: 281px;
+      margin-bottom: 0;
+      margin-right: 68px;
+    }
+  }
+
+  &__socials {
     display: flex;
-    flex-flow: column nowrap;
-    @include breakpoint($md){
-        padding: 56px 40px 56px 39px;
-        flex-direction: row;
-        justify-content: space-between;
-        align-items: flex-start;
-    }
+    gap: 20px;
 
-    &__logo {
-        width: 110px;
-        margin-bottom: 38px;
+    &-img {
+      width: 20px;
     }
-
-    &__p {
-        font-size: rem(16px);
-        line-height: 1.62;
-        margin-bottom: 38px;
-        @include breakpoint($md){
-            width: 281px;
-            margin: 0 133px 0 65px;
-        }
-    }
-
-    &__socials{
-        display: flex;
-        gap: 20px;
-
-        &-img {
-            width: 20px;
-        }
-    }
+  }
 }

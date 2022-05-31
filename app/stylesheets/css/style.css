@@ -273,7 +273,8 @@ h4 {
 @media (min-width: 640px) {
   .footer__p {
     width: 281px;
-    margin: 0 133px 0 65px;
+    margin-bottom: 0;
+    margin-right: 68px;
   }
 }
 .footer__socials {
@@ -293,13 +294,66 @@ h4 {
     height: 700px;
   }
 }
+@media (min-width: 960px) {
+  .hero {
+    height: 800px;
+  }
+}
+@media (min-width: 1280px) {
+  .hero {
+    max-width: 1110px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+@media (min-width: 980px) {
+  .hero__img-offset {
+    position: absolute;
+    right: 825px;
+    height: 800px;
+    width: 40vw;
+    background-color: #151515;
+    z-index: -2;
+  }
+}
+@media (min-width: 1280px) {
+  .hero__img-offset {
+    z-index: 1;
+    color: #fff;
+    overflow: clip;
+  }
+  .hero__img-offset::after {
+    content: "Modern \a Art Gallery";
+    white-space: pre;
+    font-family: "Big Shoulders Display", cursive;
+    font-size: 6rem;
+    text-transform: uppercase;
+    line-height: 0.92;
+    position: absolute;
+    top: 190px;
+    right: -163px;
+  }
+}
 @media (min-width: 640px) {
   .hero__img {
     max-width: 437px;
     position: absolute;
     top: 0;
     left: 0;
-    z-index: 0;
+    z-index: -1;
+  }
+}
+@media (min-width: 960px) {
+  .hero__img {
+    max-width: 540px;
+    left: auto;
+    right: 460px;
+  }
+}
+@media (min-width: 1280px) {
+  .hero__img {
+    left: 285px;
+    right: auto;
   }
 }
 .hero__wrapper {
@@ -310,12 +364,21 @@ h4 {
 }
 @media (min-width: 640px) {
   .hero__wrapper {
+    position: relative;
     margin: 0 0 0 auto;
     max-width: 339px;
-    position: relative;
     right: 40px;
     top: 145px;
     z-index: 1;
+    gap: 48px;
+  }
+}
+@media (min-width: 1280px) {
+  .hero__wrapper {
+    position: static;
+    padding-top: 190px;
+    max-width: 350px;
+    gap: 64px;
   }
 }
 .hero__h {
@@ -329,10 +392,25 @@ h4 {
     line-height: 0.93;
   }
 }
+@media (min-width: 1280px) {
+  .hero__h {
+    font-size: 6rem;
+    line-height: 0.92;
+    position: absolute;
+    top: 190px;
+    left: 0;
+  }
+}
 .hero__p {
   color: #444;
   font-size: 1.125rem;
   line-height: 1.56;
+}
+@media (min-width: 1280px) {
+  .hero__p {
+    font-size: 1.375rem;
+    line-height: 1.45;
+  }
 }
 
 .grid {
