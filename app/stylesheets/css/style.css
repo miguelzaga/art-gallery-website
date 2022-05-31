@@ -253,6 +253,14 @@ h4 {
   display: flex;
   flex-flow: column nowrap;
 }
+@media (min-width: 640px) {
+  .footer {
+    padding: 56px 40px 56px 39px;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+}
 .footer__logo {
   width: 110px;
   margin-bottom: 38px;
@@ -261,6 +269,12 @@ h4 {
   font-size: 1rem;
   line-height: 1.62;
   margin-bottom: 38px;
+}
+@media (min-width: 640px) {
+  .footer__p {
+    width: 281px;
+    margin: 0 133px 0 65px;
+  }
 }
 .footer__socials {
   display: flex;

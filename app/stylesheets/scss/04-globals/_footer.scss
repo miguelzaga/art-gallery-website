@@ -6,6 +6,12 @@
     padding: 48px 32px;
     display: flex;
     flex-flow: column nowrap;
+    @include breakpoint($md){
+        padding: 56px 40px 56px 39px;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
 
     &__logo {
         width: 110px;
@@ -16,6 +22,10 @@
         font-size: rem(16px);
         line-height: 1.62;
         margin-bottom: 38px;
+        @include breakpoint($md){
+            width: 281px;
+            margin: 0 133px 0 65px;
+        }
     }
 
     &__socials{
