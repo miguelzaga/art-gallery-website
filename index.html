@@ -26,11 +26,18 @@
     <main class="main">
       <section class="hero">
         <picture>
+          <source
+            srcset="
+              ./app/assets/tablet/image-hero@2x.jpg 2x,
+              ./app/assets/tablet/image-hero.jpg
+            "
+            media="(min-width: 640px)"
+          />
           <img
             class="hero__img"
             src="./app/assets/mobile/image-hero.jpg"
             alt="Two people watching a painting"
-            srcset="./app/assets/mobile/image-hero.jpg 2x"
+            srcset="./app/assets/mobile/image-hero@2x.jpg 2x"
           />
         </picture>
         <div class="hero__wrapper">
