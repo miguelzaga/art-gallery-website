@@ -3,19 +3,31 @@
 .footer {
   background-color: $black;
   color: white;
-  padding: 48px 32px;
-  display: flex;
-  flex-flow: column nowrap;
-  @include breakpoint($md) {
-    padding: 56px 40px 56px 39px;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: flex-start;
+
+  &__wrapper {
+    padding: 48px 32px;
+    display: flex;
+    flex-flow: column nowrap;
+    @include breakpoint($md) {
+      padding: 56px 40px 56px 39px;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: flex-start;
+    }
+    @include breakpoint($lg){
+      max-width: 1110px;
+      margin-left: auto;
+      margin-right: auto;
+      padding: 80px 0;
+    }
   }
 
   &__logo {
     width: 110px;
     margin-bottom: 38px;
+    @include breakpoint($md-lg){
+      width: 160px;
+    }
   }
 
   &__p {
@@ -26,6 +38,14 @@
       width: 281px;
       margin-bottom: 0;
       margin-right: 68px;
+    }
+    @include breakpoint($md-lg){
+      width: 430px;
+      margin-right: 140px;
+    }
+    @include breakpoint($lg){
+      font-size: rem(18px);
+      line-height: 1.56;
     }
   }
 
