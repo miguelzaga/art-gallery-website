@@ -302,11 +302,10 @@ h4 {
 @media (min-width: 1280px) {
   .hero {
     max-width: 1110px;
-    margin-left: auto;
-    margin-right: auto;
+    margin: 0 auto 180px auto;
   }
 }
-@media (min-width: 980px) {
+@media (min-width: 1010px) {
   .hero__img-offset {
     position: absolute;
     right: 825px;
@@ -422,6 +421,12 @@ h4 {
     margin-right: 40px;
   }
 }
+@media (min-width: 1280px) {
+  .grid {
+    max-width: 1110px;
+    margin: 180px auto;
+  }
+}
 .grid__1 {
   margin-bottom: 32px;
   display: flex;
@@ -435,12 +440,18 @@ h4 {
     margin-bottom: 11px;
   }
 }
+@media (min-width: 1280px) {
+  .grid__1 {
+    margin-bottom: 30px;
+  }
+}
 .grid__1-img1 {
   margin-bottom: 25px;
 }
 @media (min-width: 640px) {
   .grid__1-img1 {
     margin-bottom: 0;
+    max-width: 635px;
     flex-grow: 1;
   }
 }
@@ -450,16 +461,39 @@ h4 {
     margin-top: 36px;
   }
 }
+@media (min-width: 1280px) {
+  .grid__1-wrapper {
+    max-width: 350px;
+    margin-top: 60px;
+  }
+}
 .grid__1-h {
   font-size: 3.125rem;
   line-height: 0.9;
   text-transform: uppercase;
   margin-bottom: 21px;
 }
+@media (min-width: 1280px) {
+  .grid__1-h {
+    font-size: 3.75rem;
+    line-height: 1;
+  }
+}
+@media (min-width: 1280px) {
+  .grid__1-h .after-br::after {
+    content: none;
+  }
+}
 .grid__1-p {
   color: #444;
   font-size: 1.125rem;
   line-height: 1.56;
+}
+@media (min-width: 1280px) {
+  .grid__1-p {
+    font-size: 1.375rem;
+    line-height: 1.45;
+  }
 }
 .grid__2 {
   display: grid;
@@ -469,6 +503,13 @@ h4 {
     grid-template-columns: 398fr 280fr;
     grid-template-rows: 313fr 396fr;
     gap: 11px;
+  }
+}
+@media (min-width: 1280px) {
+  .grid__2 {
+    grid-template-columns: 635px 445px;
+    grid-template-rows: 313px 377px;
+    gap: 30px;
   }
 }
 .grid__2-img2 {
@@ -498,15 +539,32 @@ h4 {
     padding: 85px 29px;
   }
 }
+@media (min-width: 1280px) {
+  .grid__2-wrapper {
+    padding: 65px 47px 64px 48px;
+  }
+}
 .grid__2-h {
   font-size: 3.125rem;
   line-height: 0.9;
   text-transform: uppercase;
   margin-bottom: 21px;
 }
+@media (min-width: 1280px) {
+  .grid__2-h {
+    font-size: 3.75rem;
+    line-height: 1;
+  }
+}
 .grid__2-p {
   font-size: 1.125rem;
   line-height: 1.56;
+}
+@media (min-width: 1280px) {
+  .grid__2-p {
+    font-size: 1.375rem;
+    line-height: 1.45;
+  }
 }
 
 .hidden {

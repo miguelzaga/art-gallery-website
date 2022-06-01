@@ -11,12 +11,11 @@
   }
   @include breakpoint($lg) {
     max-width: 1110px;
-    margin-left: auto;
-    margin-right: auto;
+    margin: 0 auto 180px auto;
   }
 
   &__img-offset {
-    @include breakpoint(calc($md-lg + 20px)) {
+    @include breakpoint(calc($md-lg + 50px)) {
       position: absolute;
       right: 825px;
       height: 800px;
@@ -28,7 +27,7 @@
       z-index: 1;
       color: $white;
       overflow: clip;
-      
+
       &::after {
         content: "Modern \a Art Gallery";
         white-space: pre;
