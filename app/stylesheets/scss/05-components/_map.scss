@@ -1,6 +1,11 @@
+@use './../01-abstracts/' as *;
+
 .map {
   height: 550px;
   z-index: 1;
+  @include breakpoint($md){
+    height: 600px;
+  }
 
   & .leaflet-layer {
     filter: grayscale(1);

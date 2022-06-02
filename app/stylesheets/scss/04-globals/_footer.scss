@@ -34,6 +34,7 @@
     margin-bottom: 38px;
     @include breakpoint($md-lg){
       width: 160px;
+      margin-bottom: 0;
     }
   }
 
