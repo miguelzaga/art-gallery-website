@@ -4,6 +4,9 @@
   &__btn {
     &-wrapper {
       position: relative;
+      @include breakpoint($md) {
+        margin-left: 39px;
+      }
     }
 
     position: absolute;
@@ -13,7 +16,17 @@
   &__article {
     background-color: $black;
     color: $white;
-    padding: 48px 16px 56px;
+    &-wrapper {
+      margin: 0 16px;
+      padding: 48px 0 56px;
+      @include breakpoint($md){
+          margin: 0 40px 0 39px;
+          padding: 88px 0 80px;
+          display: grid;
+          grid-template-columns: 223fr 398fr;
+          column-gap: 68px;
+      }
+    }
   }
 
   &__h1 {
@@ -21,6 +34,14 @@
     line-height: 0.9;
     text-transform: uppercase;
     margin-bottom: 48px;
+    @include breakpoint($md){
+        float: left;
+        grid-column: 1/1;
+        grid-row: 1/4;
+        font-size: rem(55px);
+        line-height: 0.91;
+        margin-bottom: 0;
+    }
   }
 
   &__h2 {
@@ -44,6 +65,5 @@
   &__txt {
     font-size: rem(18px);
     line-height: 1.56;
-    height: 84px;
   }
 }

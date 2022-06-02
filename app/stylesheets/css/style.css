@@ -616,16 +616,43 @@ h4 {
 .location__btn-wrapper {
   position: relative;
 }
+@media (min-width: 640px) {
+  .location__btn-wrapper {
+    margin-left: 39px;
+  }
+}
 .location__article {
   background-color: #151515;
   color: #fff;
-  padding: 48px 16px 56px;
+}
+.location__article-wrapper {
+  margin: 0 16px;
+  padding: 48px 0 56px;
+}
+@media (min-width: 640px) {
+  .location__article-wrapper {
+    margin: 0 40px 0 39px;
+    padding: 88px 0 80px;
+    display: grid;
+    grid-template-columns: 223fr 398fr;
+    column-gap: 68px;
+  }
 }
 .location__h1 {
   font-size: 3.125rem;
   line-height: 0.9;
   text-transform: uppercase;
   margin-bottom: 48px;
+}
+@media (min-width: 640px) {
+  .location__h1 {
+    float: left;
+    grid-column: 1/1;
+    grid-row: 1/4;
+    font-size: 3.4375rem;
+    line-height: 0.91;
+    margin-bottom: 0;
+  }
 }
 .location__h2 {
   font-size: 2rem;
@@ -646,7 +673,6 @@ h4 {
 .location__txt {
   font-size: 1.125rem;
   line-height: 1.56;
-  height: 84px;
 }
 
 .hidden {
