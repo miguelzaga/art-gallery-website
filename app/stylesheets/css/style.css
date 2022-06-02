@@ -609,6 +609,38 @@ h4 {
 .location__btn-wrapper {
   position: relative;
 }
+.location__article {
+  background-color: #151515;
+  color: #fff;
+  padding: 48px 16px 56px;
+}
+.location__h1 {
+  font-size: 3.125rem;
+  line-height: 0.9;
+  text-transform: uppercase;
+  margin-bottom: 48px;
+}
+.location__h2 {
+  font-size: 2rem;
+  line-height: 1;
+  color: #d5966c;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+.location__address {
+  font-size: 1.125rem;
+  line-height: 1.56;
+  height: 84px;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+.location__txt {
+  font-size: 1.125rem;
+  line-height: 1.56;
+  height: 84px;
+}
 
 .hidden {
   display: none;

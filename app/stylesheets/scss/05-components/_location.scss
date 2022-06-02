@@ -1,10 +1,49 @@
+@use "./../01-abstracts/" as *;
+
 .location {
-    &__btn {
-        &-wrapper{
-            position: relative;
-        }
-        
-        position: absolute;
-        z-index: 2;
+  &__btn {
+    &-wrapper {
+      position: relative;
     }
+
+    position: absolute;
+    z-index: 2;
+  }
+
+  &__article {
+    background-color: $black;
+    color: $white;
+    padding: 48px 16px 56px;
+  }
+
+  &__h1 {
+    font-size: rem(50px);
+    line-height: 0.9;
+    text-transform: uppercase;
+    margin-bottom: 48px;
+  }
+
+  &__h2 {
+    font-size: rem(32px);
+    line-height: 1;
+    color: $gold;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+  }
+
+  &__address {
+    font-size: rem(18px);
+    line-height: 1.56;
+    height: 84px;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-between;
+    margin-bottom: 20px;
+  }
+
+  &__txt {
+    font-size: rem(18px);
+    line-height: 1.56;
+    height: 84px;
+  }
 }
