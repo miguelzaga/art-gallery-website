@@ -668,6 +668,15 @@ h4 {
     font-size: 3.4375rem;
     line-height: 0.91;
     margin-bottom: 0;
+    max-width: 223px;
+  }
+}
+@media (min-width: 640px) and (min-width: 960px) {
+  .location__h1 {
+    max-width: 350px;
+    gap: 220px;
+    font-size: 4.375rem;
+    line-height: 1;
   }
 }
 .location__h2 {
@@ -676,6 +685,11 @@ h4 {
   color: #d5966c;
   text-transform: uppercase;
   margin-bottom: 20px;
+}
+@media (min-width: 960px) {
+  .location__h2 {
+    font-size: 2.25rem;
+  }
 }
 .location__address {
   font-size: 1.125rem;
@@ -686,9 +700,22 @@ h4 {
   justify-content: space-between;
   margin-bottom: 20px;
 }
+@media (min-width: 960px) {
+  .location__address {
+    font-size: 1.375rem;
+    line-height: 1.45;
+  }
+}
 .location__txt {
   font-size: 1.125rem;
   line-height: 1.56;
+  max-width: 540px;
+}
+@media (min-width: 960px) {
+  .location__txt {
+    font-size: 1.375rem;
+    line-height: 1.45;
+  }
 }
 
 .hidden {
