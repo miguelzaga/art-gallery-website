@@ -250,6 +250,13 @@ h4 {
   background-color: #151515;
   color: white;
 }
+.footer--alt {
+  background-color: #d5966c;
+  color: #151515;
+}
+.footer--alt .footer__socials-img {
+  color: #151515;
+}
 .footer__wrapper {
   padding: 48px 32px;
   display: flex;
@@ -309,7 +316,7 @@ h4 {
   gap: 20px;
 }
 .footer__socials-img {
-  width: 20px;
+  color: #fff;
 }
 
 .hero {
