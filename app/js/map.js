@@ -8,6 +8,7 @@ function initializeMap() {
     zoom: 15,
     zoomControl: false,
     scrollWheelZoom: false,
+    dragging: false,
   });
 
   var myIcon = L.icon({
