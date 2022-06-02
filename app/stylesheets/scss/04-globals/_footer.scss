@@ -8,6 +8,9 @@
     color: $black;
     & .footer__socials-img{
       color: $black;
+      &:hover{
+        color: $white;
+      }
     }
   }
 
@@ -63,6 +66,9 @@
 
     &-img {
       color: $white;
+      &:hover {
+        color: $gold;
+      }
     }
   }
 }

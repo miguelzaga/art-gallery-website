@@ -257,6 +257,9 @@ h4 {
 .footer--alt .footer__socials-img {
   color: #151515;
 }
+.footer--alt .footer__socials-img:hover {
+  color: #fff;
+}
 .footer__wrapper {
   padding: 48px 32px;
   display: flex;
@@ -318,6 +321,9 @@ h4 {
 }
 .footer__socials-img {
   color: #fff;
+}
+.footer__socials-img:hover {
+  color: #d5966c;
 }
 
 .hero {
