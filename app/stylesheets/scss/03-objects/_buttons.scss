@@ -7,6 +7,7 @@
   font-size: rem(20px);
   line-height: calc(24 / 20);
   letter-spacing: rem(3.6px);
+  text-align: center;
   text-transform: uppercase;
   background-color: $black;
   color: $white;
@@ -15,6 +16,9 @@
   width: clamp(0%, calc(100% - 56px), 204px);
   height: 72px;
   cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 @mixin btn-after {
