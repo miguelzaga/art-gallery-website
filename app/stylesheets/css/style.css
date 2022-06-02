@@ -597,6 +597,9 @@ h4 {
 .map {
   height: 550px;
 }
+.map .leaflet-layer {
+  filter: grayscale(1);
+}
 
 .hidden {
   display: none;

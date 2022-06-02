@@ -1,3 +1,7 @@
 .map {
   height: 550px;
+
+  & .leaflet-layer {
+    filter: grayscale(1);
+  }
 }
