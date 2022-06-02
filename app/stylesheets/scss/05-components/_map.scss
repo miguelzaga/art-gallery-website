@@ -1,5 +1,6 @@
 .map {
   height: 550px;
+  z-index: 1;
 
   & .leaflet-layer {
     filter: grayscale(1);

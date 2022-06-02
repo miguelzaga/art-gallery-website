@@ -596,9 +596,18 @@ h4 {
 
 .map {
   height: 550px;
+  z-index: 1;
 }
 .map .leaflet-layer {
   filter: grayscale(1);
+}
+
+.location__btn {
+  position: absolute;
+  z-index: 2;
+}
+.location__btn-wrapper {
+  position: relative;
 }
 
 .hidden {

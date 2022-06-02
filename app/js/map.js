@@ -4,8 +4,9 @@ window.onload = function () {
 
 function initializeMap() {
   var map = L.map("map", {
-    center: [41.481322, -71.31036],
+    center: [41.48, -71.3095],
     zoom: 15,
+    zoomControl: false,
     scrollWheelZoom: false,
   });
 

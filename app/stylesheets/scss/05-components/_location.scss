@@ -1,0 +1,10 @@
+.location {
+    &__btn {
+        &-wrapper{
+            position: relative;
+        }
+        
+        position: absolute;
+        z-index: 2;
+    }
+}
