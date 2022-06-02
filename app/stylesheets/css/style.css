@@ -615,10 +615,19 @@ h4 {
 }
 .location__btn-wrapper {
   position: relative;
+  width: 100%;
+  max-width: 1110px;
 }
 @media (min-width: 640px) {
   .location__btn-wrapper {
-    margin-left: 39px;
+    padding-left: 39px;
+  }
+}
+@media (min-width: 1280px) {
+  .location__btn-wrapper {
+    padding-left: 0;
+    margin-left: auto;
+    margin-right: auto;
   }
 }
 .location__article {
@@ -636,6 +645,13 @@ h4 {
     display: grid;
     grid-template-columns: 223fr 398fr;
     column-gap: 68px;
+  }
+}
+@media (min-width: 1280px) {
+  .location__article-wrapper {
+    max-width: 1110px;
+    margin-left: auto;
+    margin-right: auto;
   }
 }
 .location__h1 {

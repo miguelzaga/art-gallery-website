@@ -4,8 +4,15 @@
   &__btn {
     &-wrapper {
       position: relative;
+      width: 100%;
+      max-width: 1110px;
       @include breakpoint($md) {
-        margin-left: 39px;
+        padding-left: 39px;
+      }
+      @include breakpoint($lg) {
+        padding-left: 0;
+        margin-left: auto;
+        margin-right: auto;
       }
     }
 
@@ -19,12 +26,17 @@
     &-wrapper {
       margin: 0 16px;
       padding: 48px 0 56px;
-      @include breakpoint($md){
-          margin: 0 40px 0 39px;
-          padding: 88px 0 80px;
-          display: grid;
-          grid-template-columns: 223fr 398fr;
-          column-gap: 68px;
+      @include breakpoint($md) {
+        margin: 0 40px 0 39px;
+        padding: 88px 0 80px;
+        display: grid;
+        grid-template-columns: 223fr 398fr;
+        column-gap: 68px;
+      }
+      @include breakpoint($lg) {
+        max-width: 1110px;
+        margin-left: auto;
+        margin-right: auto;
       }
     }
   }
@@ -34,13 +46,13 @@
     line-height: 0.9;
     text-transform: uppercase;
     margin-bottom: 48px;
-    @include breakpoint($md){
-        float: left;
-        grid-column: 1/1;
-        grid-row: 1/4;
-        font-size: rem(55px);
-        line-height: 0.91;
-        margin-bottom: 0;
+    @include breakpoint($md) {
+      float: left;
+      grid-column: 1/1;
+      grid-row: 1/4;
+      font-size: rem(55px);
+      line-height: 0.91;
+      margin-bottom: 0;
     }
   }
 
