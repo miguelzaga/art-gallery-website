@@ -609,6 +609,11 @@ a {
     line-height: 1;
   }
 }
+@media (min-width: 1280px) {
+  .grid__2-h {
+    margin-bottom: 32px;
+  }
+}
 .grid__2-p {
   font-size: 1.125rem;
   line-height: 1.56;
